@@ -20,9 +20,9 @@
 *(Screenshots coming soon)*
 
 ## 🛠️ Tech Stack
-- **Frontend**: React (Functional Components)
+- **Frontend**: HTML5
 - **Language**: JavaScript (ES6+)
-- **Styling**: Standard CSS
+- **Styling**: Vanilla CSS
 - **Data Source**: [NASA Open API](https://api.nasa.gov/)
 
 ## ⚙️ Installation & Setup Instructions
@@ -35,26 +35,16 @@ To run CosmoCanvas locally, follow these steps:
    cd CosmoCanvas
    ```
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Get a NASA API Key:**
+2. **Get a NASA API Key:**
    - Head over to [https://api.nasa.gov/](https://api.nasa.gov/) and generate a free API key.
 
-4. **Set up Environment Variables:**
-   - Create a `.env` file in the root of your project.
-   - Add your newly generated API key:
-     ```env
-     REACT_APP_NASA_API_KEY=your_api_key_here
-     ```
+3. **Set up API Key:**
+   - Open your JavaScript file (e.g., `script.js`).
+   - Add your newly generated API key to the corresponding configuration variable.
 
-5. **Start the development server:**
-   ```bash
-   npm start
-   ```
-   The app will automatically open in your browser at `http://localhost:3000`.
+4. **Run the application:**
+   - Simply open `index.html` in your web browser.
+   - Alternatively, use a local server like VS Code's "Live Server" extension for a better development experience.
 
 ## 📖 Usage Guide
 - **Selecting a Date**: Click the calendar input to pick a date. The app will fetch the APOD for that specific day.
@@ -72,19 +62,9 @@ This project relies on the **Astronomy Picture of the Day (APOD)** endpoint from
 
 ```text
 CosmoCanvas/
-├── public/
-│   ├── index.html
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   ├── DatePicker.jsx
-│   │   ├── MediaDisplay.jsx
-│   │   └── FullscreenModal.jsx
-│   ├── App.js
-│   ├── App.css
-│   └── index.js
-├── .env
-├── package.json
+├── index.html
+├── style.css
+├── script.js
 └── README.md
 ```
 
