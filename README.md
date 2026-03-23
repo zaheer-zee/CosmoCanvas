@@ -22,7 +22,7 @@
 ## 🛠️ Tech Stack
 - **Frontend**: HTML5
 - **Language**: JavaScript (ES6+)
-- **Styling**: Vanilla CSS
+- **Styling**: CSS
 - **Data Source**: [NASA Open API](https://api.nasa.gov/)
 
 ## ⚙️ Installation & Setup Instructions
