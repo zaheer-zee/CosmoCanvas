@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COsmoCanvas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="htmlh1">Astronomy Picture of the Day</h1>
+            <div class="controls">
+                <label for="date-picker">Select a Date:</label>
+                <input type="date" id="date-picker">
+                <button id="btn">Show Image</button>
+            </div>
+        </header>
+
+        <main>
+            <!-- Loading State -->
+            <div id="loading" class="state-message hidden">
+                <p>Loading data from NASA...</p>
+            </div>
+
+            <!-- Error State -->
+            <div id="error" class="state-message hidden">
+                <p id="error-text"></p>
+            </div>
+
+            <!-- Content Display -->
+            <article id="content" class="hidden">
+                <h2 id="apod-title"></h2>
+                <div id="media-container" class="media-container"></div>
+                <p id="apod-explanation"></p>
+            </article>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
