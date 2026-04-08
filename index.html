@@ -10,6 +10,15 @@
     <div class="container">
         <header>
             <h1 class="htmlh1">Astronomy Picture of the Day</h1>
+            
+            <div class="theme-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="theme-switch">
+                    <span class="slider round"></span>
+                </label>
+                <span id="theme-label">Dark Mode</span>
+            </div>
+
             <div class="controls">
                 <label for="date-picker">Select a Date:</label>
                 <input type="date" id="date-picker">
@@ -34,6 +43,37 @@
                 <div id="media-container" class="media-container"></div>
                 <p id="apod-explanation"></p>
             </article>
+
+            <!-- Gallery Section -->
+            <section class="gallery-section">
+                <h2>Explore the Universe (Gallery)</h2>
+                
+                <div class="gallery-controls">
+                    <input type="text" id="search-input" placeholder="Search titles or content...">
+                    
+                    <select id="filter-select">
+                        <option value="all">All Media</option>
+                        <option value="image">Images Only</option>
+                        <option value="video">Videos Only</option>
+                    </select>
+
+                    <select id="sort-select">
+                        <option value="default">Default Match</option>
+                        <option value="date-desc">Newest First</option>
+                        <option value="date-asc">Oldest First</option>
+                        <option value="title-asc">Title (A-Z)</option>
+                        <option value="title-desc">Title (Z-A)</option>
+                    </select>
+                </div>
+                
+                <div id="gallery-loading" class="state-message">
+                    <p>Loading gallery...</p>
+                </div>
+
+                <div id="gallery-container" class="gallery-grid hidden">
+                    <!-- Cards will be injected here by JS -->
+                </div>
+            </section>
         </main>
     </div>
 
